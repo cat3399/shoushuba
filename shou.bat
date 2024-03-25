@@ -1,1 +1,0 @@
-python D:\shoushuba\shoushuba.py
