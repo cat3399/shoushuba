@@ -144,7 +144,7 @@ if __name__ == '__main__':
     while True:
         try:
             if user_name=='username':
-                print(f'请替换当前目录下config.txt中的username与password为你的账号密码，如果搜书吧域名更改，也请替换原域名为新的域名')
+                print(f'请替换当前目录下config.txt中的username与password为你的账号密码，并且在第一行填入搜书吧的url，例如 https://www.284djs.soushu2028.com/ ,如果搜书吧域名更改，请更改为新的域名')
                 break
             else :
                 info=login(user_name,user_password,base_url)
