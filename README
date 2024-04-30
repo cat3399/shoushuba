@@ -1,3 +1,7 @@
 搜书吧自动签到评论脚本
 
 首次运行会在当前目录下生成config.txt文件，将账号密码和当前搜书吧的网址url填入其中，再次运行即可
+例如
+https://www.284djs.soushu2028.com/
+username
+password
