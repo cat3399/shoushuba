@@ -79,7 +79,7 @@ def get_yinbi(session,headers,formhash,base_url):
 def pl(session,headers,formhash,base_url,i,url_list):
     message=['别的不说，楼主就是给力啊','谢谢楼主分享，祝搜书吧越办越好！','看了LZ的帖子，我只想说一句很好很强大！','太感谢了太感谢了太感谢了']
     commen=random.choice(message)
-
+    commen_gbk = commen.encode('gbk')
     comment_payload = {
         'formhash': formhash,
         'handlekey': 'register',
@@ -88,7 +88,7 @@ def pl(session,headers,formhash,base_url,i,url_list):
         'noticeauthormsg': '',
         'usesig': '1',
         'subject': '',
-        'message': commen
+        'message': commen_gbk
     }
     tid=random.choice(url_list)
     pl_url=base_url+f'/forum.php?mod=post&infloat=yes&action=reply&fid=100&extra=&tid={tid}&replysubmit=yes&inajax=1'
