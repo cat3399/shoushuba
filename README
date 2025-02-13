@@ -8,3 +8,7 @@ password
 
 注意事项：
 用户名如果是中文，使用邮箱代替
+
+更新：
+使用大模型更新url，将update_url.py放在脚步同目录下，每次运行搜书吧脚本前运行一遍update_url.py(需要自己填入api url和api key)
+
